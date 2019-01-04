@@ -1,0 +1,36 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+nav {
+  color: antiquewhite;
+}
+nav li {
+  display: inline;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100px;
+}
+
+/*# sourceMappingURL=output.css.map */

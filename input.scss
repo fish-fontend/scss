@@ -1,0 +1,46 @@
+// variables
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+// nesting
+nav{
+  color:antiquewhite;
+  li{
+    display: inline;
+  }
+}
+
+// extend
+%flex{
+  display: flex;
+  align-items: center;
+}
+
+.nav{
+  @extend %flex;
+}
+
+// function
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.box { 
+  @include transform(rotate(30deg));
+}
+
+// modules
+@import "reset.scss";
+
+// compute
+$container_width : 200px;
+.main{
+  width: $container_width / 2;
+}
